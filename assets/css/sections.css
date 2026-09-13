@@ -1,5 +1,7 @@
-.product-card img {
+.product-card .card-img-top {
   height: 250px;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px; 
 }
