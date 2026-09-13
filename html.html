@@ -54,70 +54,61 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mainNav">
+               <div class="collapse navbar-collapse" id="mainNav">
+          <!-- Menu Items -->
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
             <li class="nav-item">
-              <a class="nav-link active text-dark" href="javascript:void(0)"
-                >Home</a
-              >
+              <a class="nav-link active text-dark" href="javascript:void(0)">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="javascript:void(0)">Shop</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="javascript:void(0)"
-                role="button"
-                aria-controls="mainNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
+              <a class="nav-link dropdown-toggle text-dark" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
               <ul class="dropdown-menu border-0 shadow">
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0)"
-                    >Electronics</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0)">Fashion</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0)"
-                    >Accessories</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Electronics</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Fashion</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Accessories</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="javascript:void(0)">About</a>
             </li>
           </ul>
-           <div class="d-flex gap-3">
-            <a
-              href="javascript:void(0)"
-              class="btn btn-outline-success position-relative rounded-2 px-3"
-              aria-label="Shopping cart with 2 items"
-            >
-              <i class="bi bi-cart" aria-hidden="true"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-white"
+
+          <!-- Search Box -->
+          <form class="d-flex me-3" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-end-0" id="basic-addon1">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+              <input 
+                class="form-control border-start-0 ps-0 js-search-input" 
+                type="search" 
+                placeholder="Search products..." 
+                aria-label="Search"
               >
+            </div>
+          </form>
+
+          <!-- Action Buttons -->
+           <div class="d-flex gap-3">
+            <a href="javascript:void(0)" class="btn btn-outline-success position-relative rounded-2 px-3" aria-label="Shopping cart with 2 items">
+              <i class="bi bi-cart" aria-hidden="true"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-white">
                 2
                 <span class="visually-hidden">items in cart</span>
               </span>
             </a>
-            <a
-              href="javascript:void(0)"
-              class="btn btn-success rounded-2 px-4"
-            >
+            <a href="javascript:void(0)" class="btn btn-success rounded-2 px-4">
               <i class="bi bi-person-fill me-2" aria-hidden="true"></i>
               Login
             </a>
           </div>
+        </div>
         </div>
       </div>
     </nav>
