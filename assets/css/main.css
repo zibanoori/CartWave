@@ -114,3 +114,131 @@ a {
   outline-offset: 2px;
   border-radius: 3px;
 }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 2000;
+  padding: 0.75rem 1.25rem;
+  background: var(--text);
+  color: var(--surface);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: top var(--dur) var(--ease);
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: var(--surface);
+}
+
+.container, .container-fluid, .container-lg, .container-xl {
+  --bs-gutter-x: 1.5rem; 
+}
+
+@media (min-width: 1400px) {
+  .container, .container-xl, .container-xxl {
+    max-width: 1280px;
+  }
+}
+
+.section {
+  padding-block: 4rem; 
+}
+
+.section-alt {
+  background: var(--surface);
+}
+
+.divider-top {
+  border-top: 1px solid var(--border);
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-head__title {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.section-head__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.14em;
+  bottom: 0.14em;
+  width: 4px;
+  border-radius: 2px;
+  background-color: var(--primary);
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  padding: 0.6875rem 1.25rem;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-brand {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+
+.btn-brand:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: #fff;
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  background: var(--surface-2);
+  color: var(--primary);
+}
+
+.icon-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  background: var(--primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
