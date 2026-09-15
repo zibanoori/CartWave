@@ -1,8 +1,8 @@
-.product-card .card-img-top {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+.product-card {
+  background-color: var(--surface);
+  border: 2px solid var(--border-strong); 
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
