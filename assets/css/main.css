@@ -66,15 +66,7 @@ body {
     "Inter",
     system-ui,
     -apple-system,
-<<<<<<< HEAD
-<<<<<<< HEAD
     sans-serif;
-=======
-    sans-serif;
->>>>>>> 7266942 (Define font families using Google Fonts variables)
-=======
-    sans-serif;
->>>>>>> 65ff867 (Remove Persian comments from CSS code)
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
