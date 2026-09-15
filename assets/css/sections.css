@@ -13,3 +13,11 @@
   border-color: var(--primary); 
 }
 
+.product-card .card-img-top {
+  height: 350px;      
+  width: 100%;         
+  object-fit: cover;  
+  object-position: center; 
+  border-top-left-radius: var(--radius-sm);  
+  border-top-right-radius: var(--radius-sm); 
+}
