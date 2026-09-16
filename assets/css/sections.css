@@ -21,3 +21,13 @@
   border-top-left-radius: var(--radius-sm);  
   border-top-right-radius: var(--radius-sm); 
 }
+
+.hover-white:hover {
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+footer .btn-brand {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
