@@ -233,10 +233,20 @@
         <div class="col-lg-4 col-md-6">
           <h4 class="text-white mb-3">Stay Update</h4>
           <p class="text-muted smal">Subscribe to get special</p>
-          <form class="d-flex gap3" action="/subscribe" method="POST">
+          <form class="d-flex gap-2" action="/subscribe" method="POST">
             <label for="newsletters-email" class="visually-hidden">Email address</label>
-            <input type="email" name="email" placeholder="Your email" required id="newsletters-email" class="form-control form-control-sm bg-dark corder-secondary text-light">
-            <button class="btn btn-brand btn-sm" type="submit">Subscribe</button>
+  
+            <input 
+              type="email" 
+              name="email" 
+              id="newsletters-email"
+              placeholder="Your email" 
+              required 
+              class="form-control form-control-sm bg-dark border-secondary text-light rounded-start"
+              style="border-radius: var(--radius-sm) !important;"
+  >
+  
+            <button class="btn btn-brand btn-sm rounded-end" type="submit">Subscribe</button>
           </form>
         </div>
 
