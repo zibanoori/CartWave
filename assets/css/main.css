@@ -287,10 +287,3 @@ a:hover {
   top: 1rem;
   color: var(--surface);
 }
-.hover-white:hover {
-  color: #ffffff !important;
-}
-footer .btn-brand {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
