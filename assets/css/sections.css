@@ -32,3 +32,11 @@ footer .btn-brand {
   background-color: var(--primary);
   border-color: var(--primary);
 }
+
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--text);
+  letter-spacing: -0.03em;
+}
