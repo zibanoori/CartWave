@@ -43,3 +43,8 @@ footer .btn-brand {
 .brand-accent { 
   color: var(--primary);
 }
+.navbar-brand:hover .brand-name {
+  color: var(--primary);
+  transition: scale(1.5);
+  transition: all 2s var(--ease);
+}
