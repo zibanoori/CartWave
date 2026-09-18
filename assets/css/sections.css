@@ -47,6 +47,7 @@ footer .btn-brand {
   color: var(--primary);
   transition: scale(1.5);
   transition: all 2s var(--ease);
+  text-shadow: 0 2px 8px rgba(230, 58, 76, 0.3);
 }
 .navbar-brand:hover .brand-accent {
   color: var(secondary);
