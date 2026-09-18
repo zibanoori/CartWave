@@ -40,3 +40,6 @@ footer .btn-brand {
   color: var(--text);
   letter-spacing: -0.03em;
 }
+.brand-accept {
+  color: var(--primary);
+}
