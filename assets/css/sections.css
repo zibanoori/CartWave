@@ -38,7 +38,7 @@ footer .btn-brand {
   font-weight: 800;
   font-size: 1.5rem;
   color: var(--text);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.03em; 
 }
 .brand-accent { 
   color: var(--primary);
