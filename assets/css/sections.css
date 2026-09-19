@@ -111,12 +111,20 @@ footer .btn-brand {
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: var(--primary);
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 800;
   padding: 0.6rem 1.2rem;
   border-radius: 50px;
   margin-bottom: 2rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.hero-badge::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
