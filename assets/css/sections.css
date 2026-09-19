@@ -92,3 +92,6 @@ footer .btn-brand {
   font-size: 0.85rem;
   transition: transform 0.6s var(--ease);
 }
+.floating-card i {
+  font-size: 0.9em;
+}
