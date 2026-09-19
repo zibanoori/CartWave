@@ -80,3 +80,11 @@ footer .btn-brand {
     filter: blur(0);
   }
 }
+.floating-card {
+  background: rgba(255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
