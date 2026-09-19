@@ -158,4 +158,10 @@ footer .btn-brand {
   color: #ffffff !important;
   padding: 1rem 2.5rem;
   border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s var(--ease);
+  box-shadow: 0 10px 30px -10px var(--primary);
 }
