@@ -52,6 +52,11 @@ footer .btn-brand {
 .navbar-brand:hover .brand-accent {
   color: var(secondary);
 }
+.hero-image-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
 .hero-image-wrapper img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
