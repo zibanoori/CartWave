@@ -148,3 +148,8 @@ footer .btn-brand {
   max-width: 460px;
   font-weight: 500;
 }
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
