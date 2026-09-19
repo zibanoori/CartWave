@@ -87,4 +87,7 @@ footer .btn-brand {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   z-index: 10;
+  max-width: 160px;
+  padding: 0.75rem;
+  font-size: 0.85rem;
 }
