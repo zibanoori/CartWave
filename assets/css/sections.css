@@ -140,3 +140,11 @@ footer .btn-brand {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.hero-lead {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 3rem;
+  max-width: 460px;
+  font-weight: 500;
+}
