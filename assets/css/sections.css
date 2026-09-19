@@ -98,3 +98,8 @@ footer .btn-brand {
 .hero-image-wrapper:hover .floating-card{
   transform: translateY(-2px);
 }
+.hero-content {
+  padding-right: 3rem;
+  position: relative;
+  z-index: 2;
+}
