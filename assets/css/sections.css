@@ -153,3 +153,9 @@ footer .btn-brand {
   gap: 1.5rem;
   align-items: center;
 }
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff !important;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+}
