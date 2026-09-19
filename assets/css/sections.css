@@ -95,3 +95,6 @@ footer .btn-brand {
 .floating-card i {
   font-size: 0.9em;
 }
+.hero-image-wrapper:hover .floating-card{
+  transform: translateY(-2px);
+}
