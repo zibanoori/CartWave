@@ -103,3 +103,8 @@ footer .btn-brand {
   position: relative;
   z-index: 2;
 }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
