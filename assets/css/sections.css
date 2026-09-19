@@ -1,6 +1,6 @@
 .product-card {
   background-color: var(--surface);
-  border: 2px solid var(--border-strong); 
+  border: 2px solid var(--border-strong);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
@@ -10,16 +10,16 @@
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
-  border-color: var(--primary); 
+  border-color: var(--primary);
 }
 
 .product-card .card-img-top {
-  height: 350px;      
-  width: 100%;         
-  object-fit: cover;  
-  object-position: center; 
-  border-top-left-radius: var(--radius-sm);  
-  border-top-right-radius: var(--radius-sm); 
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
 }
 
 .hover-white:hover {
@@ -38,9 +38,9 @@ footer .btn-brand {
   font-weight: 800;
   font-size: 1.5rem;
   color: var(--text);
-  letter-spacing: -0.03em; 
+  letter-spacing: -0.03em;
 }
-.brand-accent { 
+.brand-accent {
   color: var(--primary);
 }
 .navbar-brand:hover .brand-name {
@@ -70,12 +70,12 @@ footer .btn-brand {
 }
 @keyframes heroReveal {
   0% {
-    opacity:0;
-    transform:scale(0.85);
+    opacity: 0;
+    transform: scale(0.85);
     filter: blur(5px);
   }
   100% {
-    opacity:1;
+    opacity: 1;
     transform: scale(1);
     filter: blur(0);
   }
@@ -95,7 +95,7 @@ footer .btn-brand {
 .floating-card i {
   font-size: 0.9em;
 }
-.hero-image-wrapper:hover .floating-card{
+.hero-image-wrapper:hover .floating-card {
   transform: translateY(-2px);
 }
 .hero-content {
@@ -108,5 +108,5 @@ footer .btn-brand {
   align-items: center;
   gap: 10px;
   background: rgba(255, 255, 255, 0.7);
-
+  backdrop-filter: blur(12px);
 }
