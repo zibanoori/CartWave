@@ -61,4 +61,6 @@ footer .btn-brand {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   transition: transform 1s ease;
+  width: 100%;
+  height: auto;
 }
