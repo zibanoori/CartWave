@@ -52,3 +52,8 @@ footer .btn-brand {
 .navbar-brand:hover .brand-accent {
   color: var(secondary);
 }
+.hero-image-wrapper img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform 1s ease;
+}
