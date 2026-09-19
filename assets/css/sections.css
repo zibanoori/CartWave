@@ -90,4 +90,5 @@ footer .btn-brand {
   max-width: 160px;
   padding: 0.75rem;
   font-size: 0.85rem;
+  transition: transform 0.6s var(--ease);
 }
