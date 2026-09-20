@@ -260,10 +260,9 @@ footer .btn-brand {
 }
 .gallery-item:hover {
   z-index: 10 !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 3);
-  transition: box-shadow 0.3s z-index 1s linear;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3); 
+  transition: box-shadow 0.3s ease, z-index 0s linear; 
 }
-
 @keyframes fan1 {
   to {
     opacity: 1;
