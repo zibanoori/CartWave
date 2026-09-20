@@ -211,4 +211,6 @@ footer .btn-brand {
   transition: box-shadow 0.3s z-index 1s linear;
 }
 
-@keyframes fan1{ to { opacity:1; transform:translateY(0) rotate(-2deg) scale(1); filter:blur(0)}}
+@keyframes fan1 { to { opacity: 1; transform: translateY(0) rotate(-20deg) scale(1); filter: blur(0); } }
+@keyframes fan2 { to { opacity: 1; transform: translateY(0) rotate(-12deg) scale(1); filter: blur(0); } }
+
