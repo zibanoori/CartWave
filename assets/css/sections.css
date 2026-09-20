@@ -306,3 +306,12 @@ footer .btn-brand {
     filter: blur(0);
   }
 }
+@media (max-width: 768px) {
+  .hero-gallery {
+    height: 200px;
+  }
+  .gallery-item {
+    width: 90px;
+    margin-right: -20px !important;
+  }
+}
