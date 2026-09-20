@@ -194,6 +194,6 @@ footer .btn-brand {
   border-color: #198754; 
   color: #198754;
   background: rgba(25, 135, 84, 0.05); 
-  transform: translateX(5px); 
+  transition: all 0.2s var(--ease);
 }
 
