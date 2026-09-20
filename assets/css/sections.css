@@ -202,9 +202,6 @@ footer .btn-brand {
   object-fit: cover;
   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.gallery-item:hover img {
-  transform: translateY(-12px) scale(1.1) rotate(0deg);
-}
 .hero-gallery {
   display: flex;
   justify-content: center;
@@ -213,6 +210,10 @@ footer .btn-brand {
   position: relative;
   perspective: 1000px;
   padding: 2rem 0;
+}
+
+.gallery-item:hover img {
+  transform: translateY(-12px) scale(1.1) rotate(0deg);
 }
 .gallery-item:hover {
   z-index: 10 !important;
