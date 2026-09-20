@@ -153,8 +153,8 @@ footer .btn-brand {
   gap: 1.5rem;
   align-items: center;
 }
-.btn-primary {
-  background: var(--primary);
+.btn-hero-primary {
+  background: #127145; 
   color: #ffffff !important;
   padding: 1rem 2.5rem;
   border-radius: 12px;
@@ -163,5 +163,12 @@ footer .btn-brand {
   position: relative;
   overflow: hidden;
   transition: all 0.4s var(--ease);
-  box-shadow: 0 10px 30px -10px var(--primary);
+  box-shadow: 0 10px 30px -10px rgba(15, 70, 44, 0.4); 
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-3px);
+  background: #146c43;
+  box-shadow: 0 20px 40px -10px rgba(25, 135, 84, 0.5);
+  color: #ffffff !important;
 }
