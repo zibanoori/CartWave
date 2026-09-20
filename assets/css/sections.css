@@ -226,6 +226,11 @@ footer .btn-brand {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+.gallery-item:nth-child(1) {
+  margin-right: -35px;
+  z-index: 1;
+  animation-name: fan1;
+}
 .gallery-item:hover img {
   transform: translateY(-12px) scale(1.1) rotate(0deg);
 }
