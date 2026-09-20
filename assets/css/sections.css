@@ -251,6 +251,10 @@ footer .btn-brand {
   z-index: 5;
   animation-name: fan5;
 }
+.gallery-item:nth-child(6) {
+  z-index: 6;
+  animation-name: fan6;
+}
 .gallery-item:hover img {
   transform: translateY(-12px) scale(1.1) rotate(0deg);
 }
