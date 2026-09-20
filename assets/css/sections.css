@@ -184,3 +184,9 @@ footer .btn-brand {
   gap: 10px;
   transition: all 0.2s var(--ease);
 }
+.btn-hero-secondary::after {
+  content: ""; 
+  font-family: 'bootstrap-icons';
+  font-size: 1.1em;
+  transition: transform 0.3s var(--ease);
+}
