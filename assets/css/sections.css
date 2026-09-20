@@ -190,3 +190,10 @@ footer .btn-brand {
   font-size: 1.1em;
   transition: transform 0.3s var(--ease);
 }
+.btn-hero-secondary:hover {
+  border-color: #198754; 
+  color: #198754;
+  background: rgba(25, 135, 84, 0.05); 
+  transform: translateX(5px); 
+}
+
