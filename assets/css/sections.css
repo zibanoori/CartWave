@@ -161,9 +161,10 @@ footer .btn-brand {
   transition: all 0.2s var(--ease);
 }
 .btn-hero-secondary::after {
-  content: "";
-  font-family: "bootstrap-icons";
-  font-size: 1.1em;
+  content: "\f138"; 
+  font-family: "bootstrap-icons" !important;
+  font-size: 16px;     
+  font-weight: bold; 
   transition: transform 0.3s var(--ease);
 }
 .btn-hero-secondary:hover {
@@ -179,7 +180,8 @@ footer .btn-brand {
   height: 100%;
   position: relative;
   perspective: 1000px;
-  padding: 2rem 0;
+  padding-top: 4rem; 
+  padding-bottom: 2rem;
 }
 .gallery-item {
   width: 140px;
