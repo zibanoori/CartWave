@@ -1,3 +1,8 @@
+.navbar-nav .nav-link {
+  position: relative;
+  transition: clor 0.3s ease;
+}
+
 .link-footer:hover {
   color: #ffffff !important;
   transition: 0.2s;
@@ -303,3 +308,4 @@ footer .btn-brand {
   transform: translateY(-2px);
   color: var(--primary) !important;
 }
+
