@@ -22,7 +22,7 @@ footer .btn-brand {
 .navbar-brand:hover .brand-name {
   color: var(--primary);
   transition: scale(1.5);
-  transition: 2s var(--ease);
+  transition: all 2s var(--ease);
   text-shadow: 0 2px 8px rgba(230, 58, 76, 0.3);
 }
 .navbar-brand:hover .brand-accent {
@@ -138,7 +138,7 @@ footer .btn-brand {
   border: none;
   position: relative;
   overflow: hidden;
-  transition: 0.4s var(--ease);
+  transition: all 0.4s var(--ease);
   box-shadow: 0 10px 30px -10px rgba(15, 70, 44, 0.4);
 }
 
@@ -158,32 +158,32 @@ footer .btn-brand {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: 0.2s var(--ease);
+  transition: all 0.2s var(--ease);
 }
 .btn-hero-secondary::after {
-  content: "\f138";
+  content: "\f138"; 
   font-family: "bootstrap-icons" !important;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 16px;     
+  font-weight: bold; 
   transition: transform 0.3s var(--ease);
 }
 .btn-hero-secondary:hover {
   border-color: #198754;
   color: #198754;
   background: rgba(25, 135, 84, 0.05);
-  transition: 0.2s var(--ease);
+  transition: all 0.2s var(--ease);
 }
-.hero-gery {
+.hero-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   position: relative;
   perspective: 1000px;
-  padding-top: 4rem;
+  padding-top: 4rem; 
   padding-bottom: 2rem;
 }
-.gery-item {
+.gallery-item {
   width: 140px;
   aspect-ratio: 2/3;
   border-radius: var(--radius-lg);
@@ -198,41 +198,41 @@ footer .btn-brand {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-.gery-item:nth-child(1) {
+.gallery-item:nth-child(1) {
   margin-right: -35px;
   z-index: 1;
   animation-name: fan1;
 }
-.gery-item:nth-child(2) {
+.gallery-item:nth-child(2) {
   margin-right: -35px;
   z-index: 2;
   animation-name: fan2;
 }
-.gery-item:nth-child(3) {
+.gallery-item:nth-child(3) {
   margin-right: -35px;
   z-index: 3;
   animation-name: fan3;
 }
-.gery-item:nth-child(4) {
+.gallery-item:nth-child(4) {
   margin-right: -35px;
   z-index: 4;
   animation-name: fan4;
 }
-.gery-item:nth-child(5) {
+.gallery-item:nth-child(5) {
   margin-right: -35px;
   z-index: 5;
   animation-name: fan5;
 }
-.gery-item:nth-child(6) {
+.gallery-item:nth-child(6) {
   z-index: 6;
   animation-name: fan6;
 }
-.gery-item img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.gery-item:hover {
+.gallery-item:hover {
   z-index: 10 !important;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   transition:
@@ -282,10 +282,10 @@ footer .btn-brand {
   }
 }
 @media (max-width: 768px) {
-  .hero-gery {
+  .hero-gallery {
     height: 200px;
   }
-  .gery-item {
+  .gallery-item {
     width: 90px;
     margin-right: -20px !important;
   }
@@ -296,7 +296,7 @@ footer .btn-brand {
   flex-direction: column;
   align-items: center;
   min-width: 80px;
-  transition: 0.3s ease;
+  transition:all 0.3s ease;
 }
 
 .category-item:hover {
