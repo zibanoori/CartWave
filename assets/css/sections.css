@@ -1,6 +1,6 @@
-.hover-white:hover {
+.link-footer:hover {
   color: #ffffff !important;
-  transition: color 0.3s;
+  transition: 0.2s;
   padding: 2px;
 }
 
