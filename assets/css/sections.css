@@ -1,8 +1,12 @@
 .navbar-nav .nav-link {
-  position: relative;
-  transition: clor 0.3s ease;
+  color: var(--text); 
+  transition: color 0.5s ease;
 }
 
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary) !important;
+}
 .link-footer:hover {
   color: #ffffff !important;
   transition: 0.2s;
