@@ -353,3 +353,10 @@ footer .btn-brand {
   color: #198754 !important;
   transform: translateY(-2px);
 }
+.page-item.active .page-link {
+  background-color: #198754 !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4);
+  border: 1px solid #198754 !important;
+}
+
