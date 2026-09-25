@@ -364,3 +364,9 @@ footer .btn-brand {
   color: #adb5bd !important;
   pointer-events: none;
 }
+.product-card-modern {
+  background-color: antiquewhite;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
