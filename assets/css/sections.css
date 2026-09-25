@@ -431,3 +431,7 @@ footer .btn-brand {
   background: var(--primary);
   color: white;
 }
+.product-card-modern:hover .btn-add-cart {
+  transform: translateY(0);
+  opacity: 1;
+}
