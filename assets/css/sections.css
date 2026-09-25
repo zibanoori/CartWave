@@ -451,3 +451,6 @@ footer .btn-brand {
   color: var(--primary);
   margin: 0;
 }
+.empty-state i {
+  transition: transform 0.6s ease;
+}
