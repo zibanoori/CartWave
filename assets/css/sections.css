@@ -339,20 +339,12 @@ footer .btn-brand {
   box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.1);
   outline: none;
 }
-.pagination {
-  gap: 8px;
-}
 .page-link {
-  border: none;
-  background-color: #f8f9fa;
-  color-scheme: var(--text);
+  border: none !important;
+  background-color: #f8f9fa !important;
+  color: #495057 !important;
   font-weight: 600;
   border-radius: 8px !important;
   padding: 0.6rem 1rem;
-  transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.page-link:hover {
-  background-color: #e9ecef;
-  color: var(--primary);
-  transform: translateY((-2px));
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
