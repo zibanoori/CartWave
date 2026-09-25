@@ -339,3 +339,6 @@ footer .btn-brand {
   box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.1);
   outline: none;
 }
+.pagination {
+  gap: 8px;
+}
