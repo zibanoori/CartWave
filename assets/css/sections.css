@@ -359,4 +359,8 @@ footer .btn-brand {
   box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4);
   border: 1px solid #198754 !important;
 }
-
+.page-item.disabled .page-link {
+  background-color: transparent !important;
+  color: #adb5bd !important;
+  pointer-events: none;
+}
