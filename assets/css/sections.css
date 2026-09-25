@@ -435,3 +435,7 @@ footer .btn-brand {
   transform: translateY(0);
   opacity: 1;
 }
+.product-info {
+  padding: 1.2rem;
+  text-align: center;
+}
