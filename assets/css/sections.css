@@ -403,3 +403,7 @@ footer .btn-brand {
   background-color: var(--primary);
   color: white;
 }
+.badge-sale {
+  background-color: #dc3545;
+  color: white;
+}
