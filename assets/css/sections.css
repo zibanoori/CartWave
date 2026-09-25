@@ -379,3 +379,9 @@ footer .btn-brand {
   overflow: hidden;
   background-color: #f8f9fa;
 }
+.product-image-wrapper img {
+  width: 100;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
