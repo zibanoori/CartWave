@@ -365,7 +365,7 @@ footer .btn-brand {
   pointer-events: none;
 }
 .product-card-modern {
-  background-color: #fff;
+  background: #fff;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -380,7 +380,7 @@ footer .btn-brand {
   background-color: #f8f9fa;
 }
 .product-image-wrapper img {
-  width: 100;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
@@ -388,7 +388,8 @@ footer .btn-brand {
 .product-card-modern:hover .product-image-wrapper img {
   transform: scale(1.1);
 }
-.badge-new .badge-sale {
+.badge-new,
+.badge-sale {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -420,7 +421,7 @@ footer .btn-brand {
   align-items: center;
   justify-content: center;
   color: var(--text);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(20px);
   opacity: 0;
   transition: all 0.4s ease;
