@@ -348,3 +348,8 @@ footer .btn-brand {
   padding: 0.6rem 1rem;
   transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.page-link:hover {
+  background-color: rgba(25, 135, 84, 0.1) !important; 
+  color: #198754 !important;
+  transform: translateY(-2px);
+}
