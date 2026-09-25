@@ -365,7 +365,7 @@ footer .btn-brand {
   pointer-events: none;
 }
 .product-card-modern {
-  background-color: antiquewhite;
+  background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
