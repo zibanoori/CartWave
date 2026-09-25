@@ -399,3 +399,7 @@ footer .btn-brand {
   text-transform: uppercase;
   z-index: 2;
 }
+.badge-new {
+  background-color: var(--primary);
+  color: white;
+}
