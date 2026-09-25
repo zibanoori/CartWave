@@ -445,3 +445,9 @@ footer .btn-brand {
   margin-bottom: 0.5rem;
   color: var(--text);
 }
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
