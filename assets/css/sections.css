@@ -385,3 +385,6 @@ footer .btn-brand {
   object-fit: cover;
   transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.product-card-modern:hover .product-image-wrapper img {
+  transform: scale(1.1);
+}
