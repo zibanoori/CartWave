@@ -370,3 +370,6 @@ footer .btn-brand {
   overflow: hidden;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
+.product-card-modern:hover {
+  transform: translateY(-8px);
+}
