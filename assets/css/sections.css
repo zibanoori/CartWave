@@ -1,5 +1,5 @@
 .navbar-nav .nav-link {
-  color: var(--text); 
+  color: var(--text);
   transition: color 0.5s ease;
 }
 
@@ -30,9 +30,9 @@ footer .btn-brand {
 }
 .navbar-brand:hover .brand-name {
   color: var(--primary);
-  transition: all 2s var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); 
+  transition: all 2s var(--ease, cubic-bezier(0.22, 1, 0.36, 1));
   text-shadow: 0 2px 8px rgba(230, 58, 76, 0.3);
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 .navbar-brand:hover .brand-accent {
   color: var(--secondary, #ff6b35);
@@ -170,10 +170,10 @@ footer .btn-brand {
   transition: all 0.2s var(--ease);
 }
 .btn-hero-secondary::after {
-  content: "\f138"; 
+  content: "\f138";
   font-family: "bootstrap-icons" !important;
-  font-size: 16px;     
-  font-weight: bold; 
+  font-size: 16px;
+  font-weight: bold;
   transition: transform 0.3s var(--ease);
 }
 .btn-hero-secondary:hover {
@@ -189,7 +189,7 @@ footer .btn-brand {
   height: 100%;
   position: relative;
   perspective: 1000px;
-  padding-top: 4rem; 
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 .gallery-item {
@@ -305,7 +305,7 @@ footer .btn-brand {
   flex-direction: column;
   align-items: center;
   min-width: 80px;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .category-item:hover {
@@ -349,7 +349,7 @@ footer .btn-brand {
   transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .page-link:hover {
-  background-color: rgba(25, 135, 84, 0.1) !important; 
+  background-color: rgba(25, 135, 84, 0.1) !important;
   color: #198754 !important;
   transform: translateY(-2px);
 }
@@ -372,4 +372,10 @@ footer .btn-brand {
 }
 .product-card-modern:hover {
   transform: translateY(-8px);
+}
+.product-image-wrapper {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background-color: #f8f9fa;
 }
