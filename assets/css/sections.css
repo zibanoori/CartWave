@@ -407,3 +407,22 @@ footer .btn-brand {
   background-color: #dc3545;
   color: white;
 }
+.btn-add-cart {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
