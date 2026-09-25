@@ -427,3 +427,7 @@ footer .btn-brand {
   transition: all 0.4s ease;
   cursor: pointer;
 }
+.btn-add-cart:hover {
+  background: var(--primary);
+  color: white;
+}
