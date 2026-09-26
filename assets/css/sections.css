@@ -90,6 +90,11 @@
   padding-left: 5px;
 }
 
+[data-theme="dark"] footer .text-muted {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
 
 .link-footer:hover {
   color: #ffffff !important;
