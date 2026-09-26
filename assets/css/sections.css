@@ -104,6 +104,10 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+[data-theme="dark"] .product-card-modern {
+  background-color: var(--surface, #1e1e1e); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+}
 
 
 .link-footer:hover {
