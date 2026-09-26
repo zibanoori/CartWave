@@ -43,6 +43,10 @@
   color: var(--text, #e0e0e0);
 }
 
+[data-theme="dark"] .js-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
 .link-footer:hover {
   color: #ffffff !important;
