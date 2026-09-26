@@ -26,6 +26,11 @@
   border-color: rgba(255, 255, 255, 0.1);
   color: var(--text, #e0e0e0);
 }
+
+[data-theme="dark"] .shop-sort-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
 .link-footer:hover {
   color: #ffffff !important;
   transition: 0.2s;
