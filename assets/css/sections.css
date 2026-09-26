@@ -77,6 +77,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+[data-theme="dark"] footer h4 {
+  color: #ffffff !important;
+}
 
 
 .link-footer:hover {
