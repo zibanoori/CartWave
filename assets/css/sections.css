@@ -85,6 +85,10 @@
   color: rgba(255, 255, 255, 0.7) !important; 
 }
 
+[data-theme="dark"] .link-footer:hover {
+  color: var(--primary) !important; 
+  padding-left: 5px;
+}
 
 
 .link-footer:hover {
