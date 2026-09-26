@@ -146,6 +146,9 @@
   z-index: 100; 
 }
 
+[data-theme="dark"] .badge.rounded-pill {
+  border-color: var(--surface, #1e1e1e);
+}
 
 .link-footer:hover {
   color: #ffffff !important;
