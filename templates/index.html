@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartWave</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/sections.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 text-decoration-none"
+          href="index.html"
+        >
+          <img
+            src="./assets/images/logo5.webp"
+            alt="CartWave Logo"
+            width="45"
+            height="45"
+            class="d-inline-block align-text-top"
+          />
+          <span class="brand-name">
+            Cart<span class="brand-accent">Wave</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu border-0 shadow">
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=electronics"
+                    >Electronics</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=fashion"
+                    >Fashion</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=accessories"
+                    >Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <div class="d-lg-none mb-3">
+            <h6 class="fw-bold text-muted mb-2">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="shop.html?category=electronics"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Electronics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shop.html?category=fashion"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Fashion</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shop.html?category=beauty"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Beauty & Perfume</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex me-3 position-relative" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-end-0">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+              <input
+                class="form-control border-start-0 ps-0 js-search-input"
+                type="search"
+                placeholder="Search products..."
+                aria-label="Search"
+                autocomplete="off"
+              />
+            </div>
+          </form>
+          <button
+            class="btn btn-outline-secondary rounded-2 px-3 js-theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="bi bi-moon-fill" aria-hidden="true"></i>
+          </button>
+          <div class="d-flex gap-3">
+            <a
+              href="javascript:void(0)"
+              class="btn btn-outline-success position-relative rounded-2 px-3"
+              aria-label="Shopping cart with 2 items"
+            >
+              <i class="bi bi-cart" aria-hidden="true"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-white"
+              >
+                2
+                <span class="visually-hidden">items in cart</span>
+              </span>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-success rounded-2 px-4">
+              <i class="bi bi-person-fill me-2" aria-hidden="true"></i>
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-content mb-4 mb-lg-0">
+            <span class="hero-badge">New Collection 2026</span>
+            <h1 class="hero-title">
+              Elevate Your Style with <span>CartWave</span>
+            </h1>
+            <p class="hero-lead">
+              Discover premium bags, books, and electronics curated just for
+              you. Quality meets modern design in every product.
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="btn-hero-primary">Shop Now</a>
+              <a href="javascript:void(0)" class="btn-hero-secondary"
+                >View Categories</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-gallery position-relative">
+              <div class="gallery-item">
+                <img src="assets/images/heroshop.webp" alt="heroshop" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/images/laptop.webp" alt="laptop" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/images/bagg.webp" alt="bag" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/images/watch2.webp" alt="watch" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/images/perfume.webp " alt="perfume" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/images/hedphone2.webp" alt="hedphon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-shortcuts py-5">
+      <div class="container">
+        <div
+          class="d-flex justify-content-center flex-nowrap gap-4 overflow-auto pb-2"
+        >
+          <a
+            href="shop.html?category=fashion"
+            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+          >
+            <i class="bi bi-bag-heart fs-1 d-block mb-2"></i>
+            <span class="fw-semibold d-block">Bags</span>
+          </a>
+
+          <a
+            href="shop.html?category=beauty"
+            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+          >
+            <i class="bi bi-flower1 fs-1 d-block mb-2"></i>
+            <span class="fw-semibold d-block">Perfume</span>
+          </a>
+
+          <a
+            href="shop.html?category=accessories"
+            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+          >
+            <i class="bi bi-watch fs-1 d-block mb-2"></i>
+            <span class="fw-semibold d-block">Watches</span>
+          </a>
+
+          <a
+            href="shop.html?category=electronics"
+            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+          >
+            <i class="bi bi-laptop fs-1 d-block mb-2"></i>
+            <span class="fw-semibold d-block">Electronics</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-badges">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-md-3 col-6">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <i class="bi bi-truck fs-2 text-success mb-2"></i>
+              <div>
+                <h6 class="fw-bold mb-1">Free Shipping</h6>
+                <span class="text-muted d-block">On orders over $50</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <i class="bi bi-shield-check fs-2 text-success mb-2"></i>
+              <div>
+                <h6 class="fw-bold mb-1">Secure Payment</h6>
+                <span class="text-muted d-block">100% protected checkout</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <i class="bi bi-box-arrow-in-left fs-2 text-success mb-2"></i>
+              <div>
+                <h6 class="fw-bold mb-1">Easy Returns</h6>
+                <span class="text-muted d-block">30-day return policy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100"
+            >
+              <i class="bi bi-headset fs-2 text-success mb-2"></i>
+              <div>
+                <h6 class="fw-bold mb-1">24/7 Support</h6>
+                <span class="text-muted d-block">Always here for you</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a
+              class="d-flex align-items-center gap-2 text-decoration-non mb-3"
+              href="javascript:void(0)"
+            >
+              <img
+                src="./assets/images/favicon-32x32.png"
+                alt="CartWave Brand Logo"
+              />
+              <span class="fw-bold fs-4 text-white"
+                >Cart<span style="color: #ff6b35">Wave</span></span
+              >
+            </a>
+            <p class="text-muted smal">
+              Your one-stop shop for modern lifestyle products.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <ul class="list-unstyled text-muted smal">
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Shop</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Support</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >FAQ</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Shiping</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Returns</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-non text-muted link-footer"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-3">Stay Update</h4>
+            <p class="text-muted smal">Subscribe to get special</p>
+            <form class="d-flex gap-2" action="/subscribe" method="POST">
+              <label for="newsletters-email" class="visually-hidden"
+                >Email address</label
+              >
+
+              <input
+                type="email"
+                name="email"
+                id="newsletters-email"
+                placeholder="Your email"
+                required
+                class="form-control form-control-sm bg-dark border-secondary text-light rounded-start"
+                style="border-radius: var(--radius-sm) !important"
+              />
+
+              <button class="btn btn-brand btn-sm rounded-end" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+        <div class="text-center text-muted smal">
+          &copy; 2026 CartWave. All rights reserved. Designed by
+          <a href="https://github.com/zibanoori" target="_blank">Ziba Noori</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/script/main.js"></script>
+  </body>
+</html>

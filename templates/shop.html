@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - CartWave</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/sections.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 text-decoration-none"
+          href="index.html"
+        >
+          <img
+            src="./assets/images/logo5.webp"
+            alt="CartWave Logo"
+            width="45"
+            height="45"
+          />
+          <span class="brand-name"
+            >Cart<span class="brand-accent">Wave</span></span
+          >
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Categories</a
+              >
+              <ul class="dropdown-menu border-0 shadow">
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=electronics"
+                    >Electronics</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=fashion"
+                    >Fashion</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="shop.html?category=accessories"
+                    >Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+
+          <div class="d-lg-none mb-3">
+            <h6 class="fw-bold text-muted mb-2">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="shop.html?category=electronics"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Electronics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shop.html?category=fashion"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Fashion</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shop.html?category=beauty"
+                  class="text-decoration-none text-dark d-block py-1"
+                  >Beauty & Perfume</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex me-3 position-relative" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-light border-end-0">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+              <input
+                class="form-control border-start-0 ps-0 js-search-input"
+                type="search"
+                placeholder="Search products..."
+                aria-label="Search"
+                autocomplete="off"
+              />
+            </div>
+          </form>
+          <button
+            class="btn btn-outline-secondary rounded-2 px-3 js-theme-toggle"
+          >
+            <i class="bi bi-moon-fill"></i>
+          </button>
+          <div class="d-flex gap-3">
+            <a
+              href="#"
+              class="btn btn-outline-success position-relative rounded-2 px-3"
+            >
+              <i class="bi bi-cart"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-white"
+              ></span>
+            </a>
+            <a href="#" class="btn btn-success rounded-2 px-4"
+              ><i class="bi bi-person-fill me-2"></i>Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Shop Header -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h1 class="fw-bold mb-3">All products</h1>
+        <p class="text-muted">Discover our latest collection of permium item</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <aside class="col-lg-3">
+            <div class="card border-0 shadow-sm p-3">
+              <h5 class="fw-bold mb-3">Filters</h5>
+              <div class="mb-4">
+                <h6 class="fw-semibold">Categories</h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none text-muted"
+                      >Electronics</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-muted"
+                      >Fashion</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-muted"
+                      >Accessories</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <main class="col-lg-9">
+            <!-- Toolbar -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <span class="text-muted">Showing 1–6 of 20 results</span>
+              <select class="shop-sort-select w-auto">
+                <option>Sort by: Popularity</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest Arrivals</option>
+              </select>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <span class="badge-new">New</span>
+                    <img src="assets/images/watch2.webp" alt="Leather Watch" />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Leather Watch</h6>
+                    <p class="product-price">$120.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <img src="assets/images/bagg.webp" alt="Classic Bag" />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Classic Bag</h6>
+                    <p class="product-price">$85.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <span class="badge-sale">Sale</span>
+                    <img
+                      src="assets/images/hedphone2.webp"
+                      alt="Wireless Headphones"
+                    />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Wireless Headphones</h6>
+                    <p class="product-price">
+                      <del class="text-muted small me-2">$250</del> $210.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <img
+                      src="assets/images/perfume.webp"
+                      alt="Luxury Perfume"
+                    />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Luxury Perfume</h6>
+                    <p class="product-price">$65.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <img src="assets/images/laptop.webp" alt="Pro Laptop" />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Pro Laptop</h6>
+                    <p class="product-price">$999.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card-modern">
+                  <div class="product-image-wrapper">
+                    <img
+                      src="assets/images/heroshop.webp"
+                      alt="Smart Speaker"
+                    />
+                    <button class="btn-add-cart" aria-label="Add to cart">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                  <div class="product-info">
+                    <h6 class="product-title">Smart Speaker</h6>
+                    <p class="product-price">$45.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Empty State Section -->
+            <div class="empty-state text-center py-5 d-none">
+              <div class="mb-3">
+                <i class="bi bi-search display-1 text-muted opacity-25"></i>
+              </div>
+              <h3 class="fw-bold mb-2">No products found</h3>
+              <p class="text-muted mb-4">
+                We couldn't find what you're looking for. Try adjusting your
+                filters.
+              </p>
+              <a
+                href="shop.html"
+                class="btn btn-outline-success rounded-pill px-4"
+              >
+                <i class="bi bi-arrow-counterclockwise me-2"></i>Clear Filters
+              </a>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    href="javascript:void(0)"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="javascript:void(0)">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0)">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0)">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:void(0)">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="text-center text-muted smal">
+          &copy; 2026 CartWave. All rights reserved. Designed by
+          <a href="https://github.com/zibanoori" target="_blank">Ziba Noori</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>
