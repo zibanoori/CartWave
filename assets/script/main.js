@@ -14,4 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
     updateIcon(newTheme);
   });
+
+  function updateIcon(theme) {
+    if (!icon) return;
+    if (theme === 'dark') {
+        icon.classList.remove('bi-moon-fill');
+        icon.classList.add('bi-sun-fill');
+    }else {
+        icon.classList.remove('bi-sun-fill');
+        icon.classList.add('bi-moon-fill')
+    }
+  }
 });
