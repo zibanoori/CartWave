@@ -109,6 +109,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
+[data-theme="dark"] .product-title {
+  color: #ffffff !important;
+}
+
 
 .link-footer:hover {
   color: #ffffff !important;
