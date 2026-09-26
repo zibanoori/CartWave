@@ -23,3 +23,14 @@
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    h1 { font-size: 1.75rem; }
+    
+    .form-control, .btn {
+        min-height: 48px; 
+    }
+}
