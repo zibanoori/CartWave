@@ -16,6 +16,11 @@
   background-color: var(--surface, #1e1e1e);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+[data-theme="dark"] .navbar-nav .nav-link {
+  color: var(--text, #e0e0e0);
+}
+
 .link-footer:hover {
   color: #ffffff !important;
   transition: 0.2s;
