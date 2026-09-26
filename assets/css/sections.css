@@ -81,6 +81,11 @@
   color: #ffffff !important;
 }
 
+[data-theme="dark"] .link-footer {
+  color: rgba(255, 255, 255, 0.7) !important; 
+}
+
+
 
 .link-footer:hover {
   color: #ffffff !important;
