@@ -113,6 +113,10 @@
   color: #ffffff !important;
 }
 
+[data-theme="dark"] .product-info p {
+  color: rgba(255, 255, 255, 0.7) !important; 
+}
+
 
 .link-footer:hover {
   color: #ffffff !important;
