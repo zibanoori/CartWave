@@ -7,3 +7,19 @@
     h2 { font-size: 1.75rem; }
 }
 
+@media (max-width: 768px) {
+    :root {
+        --fs-display: 2rem; 
+        --section-y: 3rem;  
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
