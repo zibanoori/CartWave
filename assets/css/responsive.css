@@ -1,36 +1,43 @@
 @media (max-width: 992px) {
-    .container {
-        max-width: 95%;
-    }
-    
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
+  .container {
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 768px) {
-    :root {
-        --fs-display: 2rem; 
-        --section-y: 3rem;  
-    }
+  :root {
+    --fs-display: 2rem;
+    --section-y: 3rem;
+  }
 
-    .card:hover {
-        transform: none;
-    }
+  .card:hover {
+    transform: none;
+  }
 
-    .btn {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
-    }
-    
-    h1 { font-size: 1.75rem; }
-    
-    .form-control, .btn {
-        min-height: 48px; 
-    }
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-control,
+  .btn {
+    min-height: 48px;
+  }
 }
