@@ -57,8 +57,11 @@
   color: #ffffff !important; 
 }
 
-
-
+[data-theme="dark"] .js-search-input {
+  background-color: #1e1e1e !important; 
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
 
 .link-footer:hover {
   color: #ffffff !important;
