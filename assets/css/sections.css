@@ -7,6 +7,10 @@
 .navbar-nav .nav-link.active {
   color: var(--primary) !important;
 }
+.navbar {
+  background-color: var(--surface, #ffffff);
+  transition: background-color rgba(255, 255, 255, 0.1);
+}
 .link-footer:hover {
   color: #ffffff !important;
   transition: 0.2s;
