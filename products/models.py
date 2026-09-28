@@ -4,3 +4,4 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     price = models.IntegerField()
+    image = models.ImageField(upload_to="products/",blank=True)
