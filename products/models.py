@@ -5,3 +5,4 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     price = models.IntegerField()
     image = models.ImageField(upload_to="products/",blank=True)
+    is_active = models.BooleanField(default=True)
