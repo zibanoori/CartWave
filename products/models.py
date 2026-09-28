@@ -6,3 +6,4 @@ class Product(models.Model):
     price = models.IntegerField()
     image = models.ImageField(upload_to="products/",blank=True)
     is_active = models.BooleanField(default=True)
+    is_features = models.BooleanField(default=False)
