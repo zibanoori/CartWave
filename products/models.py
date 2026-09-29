@@ -6,8 +6,11 @@ class Product(models.Model):
     price = models.IntegerField()
     image = models.ImageField(upload_to="products/",blank=True)
     is_active = models.BooleanField(default=True)
-    is_features = models.BooleanField(default=False)
+    is_featured = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     
     class Meta:
         ordering = ['-created_at']
+        
+    def __str__(self):
+        return self.name
