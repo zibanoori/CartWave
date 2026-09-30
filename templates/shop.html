@@ -204,12 +204,12 @@
 
             <!-- Product Grid -->
             <div class="row g-4">
+               {% for product in products %}
               <div class="col-lg-4 col-md-6">
                 <div class="product-card-modern">
-
                   <div class="product-image-wrapper">
                     <span class="badge-new">New</span>
-                    <img src="{% static "assets/images/watch2.webp" %}" alt="Leather Watch" />
+                    <img src="{{ product.image-wrapper }}" alt="{{ product.name}}" />
                     <button class="btn-add-cart" aria-label="Add to cart">
                       <i class="bi bi-bag-plus"></i>
                     </button>
