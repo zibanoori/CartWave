@@ -6,4 +6,5 @@ def index(request):
     return render(request, "index.html", {"featured_products": featured_products})
 
 def shop(request):
-    return render(request, "shop.html")
+    products = Product.objects.filter(is_active=True).order_by('-created_at')
+    return render(request, "shop.html", {"products": products})
