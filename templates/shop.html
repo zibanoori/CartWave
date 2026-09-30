@@ -220,7 +220,11 @@
                   </div>
                 </div>
               </div>
-            
+              {% empty %}
+            <div class="col-12 text-center py-5">
+              <p>No active products available yet!</p>
+            </div>
+            {% endfor %}
             </div>
             <!-- Empty State Section -->
             <div class="empty-state text-center py-5 d-none">
