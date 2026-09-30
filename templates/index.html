@@ -186,29 +186,15 @@
           </div>
           <div class="col-lg-6">
             <div class="hero-gallery position-relative">
-              <div class="gallery-item">
-                <img src="{% static "assets/images/heroshop.webp" %}" alt="heroshop" />
+              {% for product in featured_products %}
+              <div class="gallery-item" style="--i: {{ forloop.counter0 }}">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" />
               </div>
-
-              <div class="gallery-item">
-                <img src="{% static "assets/images/laptop.webp" %}" alt="laptop" />
-              </div>
-
-              <div class="gallery-item">
-                <img src="{% static "assets/images/bagg.webp" %}" alt="bag" />
-              </div>
-
-              <div class="gallery-item">
-                <img src="{% static "assets/images/watch2.webp" %}" alt="watch" />
-              </div>
-
-              <div class="gallery-item">
-                <img src="{% static "assets/images/perfume.webp" %}" alt="perfume" />
-              </div>
-
-              <div class="gallery-item">
-                <img src="{% static "assets/images/hedphone2.webp" %}" alt="hedphon" />
-              </div>
+              {% empty %}
+                <div class="gallery-item">
+                  <p>No special product has been registered yet!</p>
+                </div>
+              {% endfor %}
             </div>
           </div>
         </div>
