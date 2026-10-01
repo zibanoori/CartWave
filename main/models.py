@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class SiteConfig(models.Model):
+    site_title = models.CharField(max_length=200, default="CartWave")
+
+    
+    
