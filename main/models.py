@@ -7,4 +7,5 @@ class SiteConfig(models.Model):
     favicon = models.ImageField(upload_to="site/favicon/", blank=True, null=True)
     
     class Meta:
-        verbose_name= "site configuration"
+        verbose_name = "site configuration"
+        verbose_name_plral = "site configurations"
