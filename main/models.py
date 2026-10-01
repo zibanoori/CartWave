@@ -5,3 +5,6 @@ class SiteConfig(models.Model):
     desscription = models.TextField(blank=True)
     logo = models.ImageField(upload_to="site/logo/", blank=True, null=True)
     favicon = models.ImageField(upload_to="site/favicon/", blank=True, null=True)
+    
+    class Meta:
+        verbose_name= "site configuration"
