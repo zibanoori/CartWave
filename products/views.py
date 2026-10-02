@@ -18,4 +18,8 @@ def shop(request):
 def product_detail(request, id):
     product = get_object_or_404(Product, id=id)
     site_config = SiteConfig.objects.first()
+    return render(request, "product_detail.html", {
+        "product": product,
+        "site_config": site_config
+    })
     
