@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Product
+from main.models import SiteConfig
 
 def index(request):
     featured_products = Product.objects.filter(is_featured=True, is_active=True)[:6]
