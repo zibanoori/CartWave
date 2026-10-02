@@ -8,6 +8,6 @@ class SiteConfig(models.Model):
     
     class Meta:
         verbose_name = "site configuration"
-        verbose_name_plral = "site configurations"
+        verbose_name_plural = "site configurations"
     def __str__(self):
         return self.site_title
