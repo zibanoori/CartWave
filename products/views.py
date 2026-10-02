@@ -9,4 +9,5 @@ def index(request):
 
 def shop(request):
     products = Product.objects.filter(is_active=True).order_by('-created_at')
-    return render(request, "shop.html", {"products": products})
+    site_config = SiteConfig.objects.first()
+    return render(request, "shop.html", {"products": products, "site_config": site_config})
