@@ -1,139 +1,135 @@
-{% extends "base.html" %}
-{% load static humanize %}
-
-{% block title %}Home - CartWave{% endblock %}
-
-{% block content %}
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-6 hero-content mb-4 mb-lg-0">
-            <span class="hero-badge">New Collection 2026</span>
-            <h1 class="hero-title">
-              Elevate Your Style with <span>CartWave</span>
-            </h1>
-            <p class="hero-lead">
-              Discover premium bags, books, and electronics curated just for
-              you. Quality meets modern design in every product.
-            </p>
-            <div class="hero-actions">
-              <a href="#products" class="btn-hero-primary">Shop Now</a>
-              <a href="javascript:void(0)" class="btn-hero-secondary"
-                >View Categories</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-gallery position-relative">
-              {% for product in featured_products %}
-              <div class="gallery-item" style="--i: {{ forloop.counter0 }}">
-                <img src="{{ product.image.url }}" alt="{{ product.name }}" />
-              </div>
-              {% empty %}
-                <div class="gallery-item">
-                  <p>No special product has been registered yet!</p>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
+{% extends "base.html" %} {% load static humanize %} {% block title %}Home -
+CartWave{% endblock %} {% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero-content mb-4 mb-lg-0">
+        <span class="hero-badge">New Collection 2026</span>
+        <h1 class="hero-title">
+          Elevate Your Style with <span>CartWave</span>
+        </h1>
+        <p class="hero-lead">
+          Discover premium bags, books, and electronics curated just for you.
+          Quality meets modern design in every product.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-hero-primary">Shop Now</a>
+          <a href="javascript:void(0)" class="btn-hero-secondary"
+            >View Categories</a
+          >
         </div>
       </div>
-    </section>
+      <div class="col-lg-6">
+        <div class="hero-gallery position-relative">
+          {% for product in featured_products %}
+          <div class="gallery-item" style="--i: {{ forloop.counter0 }}">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+          </div>
+          {% empty %}
+          <div class="gallery-item">
+            <p>No special product has been registered yet!</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Category Shortcuts -->
-    <section class="category-shortcuts py-5">
-      <div class="container">
+<!-- Category Shortcuts -->
+<section class="category-shortcuts py-5">
+  <div class="container">
+    <div
+      class="d-flex justify-content-center flex-nowrap gap-4 overflow-auto pb-2"
+    >
+      <a
+        href="/shop/?category=fashion"
+        class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+      >
+        <i class="bi bi-bag-heart fs-1 d-block mb-2"></i>
+        <span class="fw-semibold d-block">Bags</span>
+      </a>
+
+      <a
+        href="/shop/?category=beauty"
+        class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+      >
+        <i class="bi bi-flower1 fs-1 d-block mb-2"></i>
+        <span class="fw-semibold d-block">Perfume</span>
+      </a>
+
+      <a
+        href="/shop/?category=accessories"
+        class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+      >
+        <i class="bi bi-watch fs-1 d-block mb-2"></i>
+        <span class="fw-semibold d-block">Watches</span>
+      </a>
+
+      <a
+        href="/shop/?category=electronics"
+        class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
+      >
+        <i class="bi bi-laptop fs-1 d-block mb-2"></i>
+        <span class="fw-semibold d-block">Electronics</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Badges -->
+<section class="trust-badges">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
         <div
-          class="d-flex justify-content-center flex-nowrap gap-4 overflow-auto pb-2"
+          class="d-flex flex-column align-items-center justify-content-center h-100"
         >
-          <a
-            href="/shop/?category=fashion"
-            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
-          >
-            <i class="bi bi-bag-heart fs-1 d-block mb-2"></i>
-            <span class="fw-semibold d-block">Bags</span>
-          </a>
-
-          <a
-            href="/shop/?category=beauty"
-            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
-          >
-            <i class="bi bi-flower1 fs-1 d-block mb-2"></i>
-            <span class="fw-semibold d-block">Perfume</span>
-          </a>
-
-          <a
-            href="/shop/?category=accessories"
-            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
-          >
-            <i class="bi bi-watch fs-1 d-block mb-2"></i>
-            <span class="fw-semibold d-block">Watches</span>
-          </a>
-
-          <a
-            href="/shop/?category=electronics"
-            class="category-item text-center text-decoration-none text-dark p-3 rounded-4"
-          >
-            <i class="bi bi-laptop fs-1 d-block mb-2"></i>
-            <span class="fw-semibold d-block">Electronics</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust Badges -->
-    <section class="trust-badges">
-      <div class="container">
-        <div class="row g-4 text-center">
-          <div class="col-md-3 col-6">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <i class="bi bi-truck fs-2 text-success mb-2"></i>
-              <div>
-                <h6 class="fw-bold mb-1">Free Shipping</h6>
-                <span class="text-muted d-block">On orders over $50</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <i class="bi bi-shield-check fs-2 text-success mb-2"></i>
-              <div>
-                <h6 class="fw-bold mb-1">Secure Payment</h6>
-                <span class="text-muted d-block">100% protected checkout</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <i class="bi bi-box-arrow-in-left fs-2 text-success mb-2"></i>
-              <div>
-                <h6 class="fw-bold mb-1">Easy Returns</h6>
-                <span class="text-muted d-block">30-day return policy</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-6">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center h-100"
-            >
-              <i class="bi bi-headset fs-2 text-success mb-2"></i>
-              <div>
-                <h6 class="fw-bold mb-1">24/7 Support</h6>
-                <span class="text-muted d-block">Always here for you</span>
-              </div>
-            </div>
+          <i class="bi bi-truck fs-2 text-success mb-2"></i>
+          <div>
+            <h6 class="fw-bold mb-1">Free Shipping</h6>
+            <span class="text-muted d-block">On orders over $50</span>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="col-md-3 col-6">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center h-100"
+        >
+          <i class="bi bi-shield-check fs-2 text-success mb-2"></i>
+          <div>
+            <h6 class="fw-bold mb-1">Secure Payment</h6>
+            <span class="text-muted d-block">100% protected checkout</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center h-100"
+        >
+          <i class="bi bi-box-arrow-in-left fs-2 text-success mb-2"></i>
+          <div>
+            <h6 class="fw-bold mb-1">Easy Returns</h6>
+            <span class="text-muted d-block">30-day return policy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center h-100"
+        >
+          <i class="bi bi-headset fs-2 text-success mb-2"></i>
+          <div>
+            <h6 class="fw-bold mb-1">24/7 Support</h6>
+            <span class="text-muted d-block">Always here for you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
