@@ -39,4 +39,4 @@ local_settings.py
 .DS_Store
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+Desktop.inicartwave.sqlite3
