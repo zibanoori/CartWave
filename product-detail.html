@@ -193,6 +193,8 @@
       ];
 function showProduct(id) {
   const product = products.find(p => p.id == id);
+  document.getElementById('product-name').innerText = product.name;
+
 
 }
     
