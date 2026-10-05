@@ -206,10 +206,16 @@
       }
 
       const urlParams = new URLSearchParams(window.location.search);
-      const productId = urlParams.get('id');
+      const productId = urlParams.get("id");
       if (productId) {
         showProduct(productId);
       }
+
+      document.querySelectorAll(".thumbnail-item img").forEach((tumb) => {
+        tumb.addEventListener("click", function () {
+          document.getElementById("product-image").src = this.src;
+        });
+      });
     </script>
   </body>
 </html>
