@@ -1,0 +1,185 @@
+{% extend 'base.html' %}
+{% block title %} {{product.name}}- CartWave{% endblock %}
+
+{% block content %}
+    <section class="py-5">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="mb-4" aria-label="breadcrumb">
+          <ol class="breadcrumb small text-muted">
+            <li class="breadcrumb-item">
+              <a href="/" class="text-decoration-none text-muted">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/shop/" class="text-decoration-none text-muted">Shop</a>
+            </li>
+            <li class="breadcrumb-item active fw-semibold">
+              Premium Leather Bag
+            </li>
+          </ol>
+        </nav>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <div
+              class="bg-light rounded-4 overflow-hidden shadow-sm position-relative"
+            >
+              <img
+                src="assets/images/baggg.webp"
+                alt="Product"
+                class="w-100 h-auto object-fit-cover main-product-image"
+                style="min-height: 500px"
+              />
+            </div>
+            <div class="d-flex gap-2 mt-3">
+              <div
+                class="thumbnail-item border border-light-subtle rounded-3 p-1"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  src="assets/images/bagg.webp"
+                  alt="thumb"
+                  class="w-100 h-100 object-fit-cover rounded-2"
+                />
+              </div>
+              <div
+                class="thumbnail-item border border-light-subtle rounded-3 p-1"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  src="assets/images/bagg2.webp"
+                  alt="thumb"
+                  class="w-100 h-100 object-fit-cover rounded-2"
+                />
+              </div>
+              <div
+                class="thumbnail-item border border-light-subtle rounded-3 p-1"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  src="assets/images/bag2.webp"
+                  alt="thumb"
+                  class="w-100 h-100 object-fit-cover rounded-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Info -->
+          <div class="col-lg-6 ps-lg-5">
+            <h1 class="display-6 fw-bold mb-3 text-dark">
+              Premium Leather Bag
+            </h1>
+
+            <div
+              class="d-flex align-items-baseline gap-3 mb-4 pb-3 border-bottom border-light-subtle"
+            >
+              <span class="fs-2 fw-bold text-success">$129.00</span>
+              <div class="d-flex align-items-center text-warning small">
+                <i class="bi bi-star-fill me-1"></i>
+                <i class="bi bi-star-fill me-1"></i>
+                <i class="bi bi-star-fill me-1"></i>
+                <i class="bi bi-star-half me-1"></i>
+                <span class="fw-medium text-dark">4.5</span>
+                <span class="text-muted ms-1">/5</span>
+              </div>
+            </div>
+
+            <p class="text-muted mb-4 lh-lg" style="font-size: 1.05rem">
+              This premium leather bag is crafted from the finest materials to
+              provide both style and durability. Perfect for everyday use or
+              special occasions.
+            </p>
+
+            <ul class="list-unstyled mb-4 d-grid gap-2">
+              <li class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-check2-circle text-success fs-5"></i>
+                <span>Premium Quality Materials</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-truck text-success fs-5"></i>
+                <span>Free Shipping Over $50</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 text-secondary">
+                <i class="bi bi-shield-check text-success fs-5"></i>
+                <span>30-Day Money Back Guarantee</span>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <button class="btn btn-success btn-lg px-5 rounded-3 shadow-sm">
+                <i class="bi bi-bag-plus me-2"></i>Add to Cart
+              </button>
+              <button
+                class="btn btn-outline-secondary btn-lg rounded-3"
+                aria-label="Add to wishlist"
+              >
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <div class="pt-4 border-top border-light-subtle">
+              <div class="d-flex gap-4 small text-muted">
+                <span>SKU: <strong class="text-dark">BAG-001</strong></span>
+                <span
+                  >Category:
+                  <a
+                    href="#"
+                    class="text-decoration-none text-success fw-medium"
+                    >Fashion</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const product = [
+        {
+          id: 1,
+          name: "Premium Leather Bag",
+          price: "$129.00",
+          description:
+            "This premium leather bag is crafted from the finest materials to provide both style and durability. Perfect for everyday use or special occasions.",
+          image: "assets/images/baggg.webp",
+        },
+        {
+          id: 2,
+          name: "Classic Denim bag",
+          price: "$89.50",
+          desc: "A timeless denim bag perfect for any season. Made with high-quality cotton for maximum comfort.",
+          image: "assets/images/bagg.webp",
+          sku: "BAG-002",
+        },
+      ];
+      function showProduct(id) {
+        const product = products.find((p) => p.id == id);
+        if (product) {
+          document.getElementById("product-name").innerText = product.name;
+          document.getElementById("product-price").innerText = product.price;
+          document.getElementById("product-desc").innerText =
+            product.description;
+          document.getElementById("product-image").src = product.image;
+          document.getElementById("product-sku").innerText = product.sku;
+          document.getElementById("breadcrumb-product").innerText =
+            product.name;
+        }
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+      if (productId) {
+        showProduct(productId);
+      }
+
+      document.querySelectorAll(".thumbnail-item img").forEach((tumb) => {
+        tumb.addEventListener("click", function () {
+          document.getElementById("product-image").src = this.src;
+        });
+      });
+    </script>
+    {% end block %}
+  
