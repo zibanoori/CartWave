@@ -7,13 +7,12 @@ class Category(models.Model):
     def __str__(self):
         return self.name
     
-class productImage(models.Model):
-    image = models.ImageField(upload_to="products/", blank=True)
 class Product(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     price = models.IntegerField()
     image = models.ImageField(upload_to="products/",blank=True)
+    sku = models.CharField(max_length=50 ,unice=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
