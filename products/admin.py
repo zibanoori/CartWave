@@ -2,7 +2,8 @@ from django.contrib import admin
 from .models import Product, Category
 
 @admin.register(Category)
-clSS
+class CategoryAdmin(admin.ModelAdmin):
+    
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
