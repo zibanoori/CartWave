@@ -15,9 +15,11 @@ def shop(request):
         "site_config": site_config
         })
 
-def product_detail(request, id):
-    product = get_object_or_404(Product, id=id)
+def product_detail(request, slug):
+    product = get_object_or_404(Product, slug=slug, is_active=True)
     site_config = SiteConfig.objects.first()
+    
+    
     return render(request, "product_detail.html", {
         "product": product,
         "site_config": site_config
