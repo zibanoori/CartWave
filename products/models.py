@@ -12,7 +12,7 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     price = models.IntegerField()
     image = models.ImageField(upload_to="products/",blank=True)
-    sku = models.CharField(max_length=50 ,unice=True, blank=True)
+    sku = models.CharField(max_length=50, blank=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name='products')
     is_active = models.BooleanField(default=True)
     is_featured = models.BooleanField(default=False)
