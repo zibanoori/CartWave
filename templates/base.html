@@ -147,9 +147,56 @@
 
     <main>{% block content %} {% endblock %}</main>
 
+        <!-- footer -->
     <footer class="bg-dark text-light py-5 mt-5">
-      <div class="container text-center">
-        <p>&copy; 2026 CartWave. All rights reserved.</p>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="/">
+              <img src="{% static 'assets/images/favicon-32x32.png' %}" alt="CartWave Brand Logo" width="32" />
+              <span class="fw-bold fs-4 text-white">Cart<span style="color: #ff6b35">Wave</span></span>
+            </a>
+            <p class="text-muted small">
+              Your one-stop shop for modern lifestyle products.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Quick Links</h4>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2"><a href="/" class="text-decoration-none text-muted link-footer">Home</a></li>
+              <li class="mb-2"><a href="/shop/" class="text-decoration-none text-muted link-footer">Shop</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">About Us</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h4 class="text-white mb-3">Support</h4>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">FAQ</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">Shipping</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">Returns</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-muted link-footer">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-3">Stay Updated</h4>
+            <p class="text-muted small">Subscribe to get special offers.</p>
+            <form class="d-flex gap-2" action="#" method="POST">
+              <input type="email" name="email" placeholder="Your email" required 
+                     class="form-control form-control-sm bg-dark border-secondary text-light rounded-start" />
+              <button class="btn btn-success btn-sm rounded-end" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+        <div class="text-center text-muted small">
+          &copy; 2026 CartWave. All rights reserved. Designed by
+          <a href="https://github.com/zibanoori" target="_blank" class="text-success">Ziba Noori</a>
+        </div>
       </div>
     </footer>
 
